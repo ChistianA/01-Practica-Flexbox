@@ -27,11 +27,7 @@
 	transition: background-color .2s;
 }
 
-.search-container > input:hover{
-	background-color: #E2E2E2;
-}
-
-.search-container > input:focus{
+.search-container > input:hover, .search-container > input:focus{
 	background-color: #E2E2E2;
 }
 
@@ -123,18 +119,6 @@ p{
 	margin-left: 70px;
 	width: 450px;
 }
-button{
-	color: #fff;
-	background-color: #AC0000;
-	border: none;
-	border-radius: 20px;
-}
-
-button:hover{
-	/*box-shadow: 0px 0px 5px #AC0000;*/
-	background-color: #8C0000;
-	cursor: pointer;
-}
 
 .main-container{
 	display: flex;
@@ -184,14 +168,21 @@ button:hover{
 	top: 40px;
 }
 
-.photos-title{
+.photos-title > button{
 	font-size: 20px;
 	margin-left: 25px;
 	margin-bottom: 10px;
+	border-style: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.photos-title > button:first-child{
+	color: #AC0000;
 }
 
 .photos-title > b:nth-child(2){
-	padding: 0 40px;
+	margin: 0 40px;
 }
 
 .photos-line{
@@ -226,6 +217,18 @@ button:hover{
 	width: 250px;
 }
 
+.photos-button > button, .profile-container > button{
+	color: #fff;
+	background-color: #AC0000;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.photos-button > button:hover, .profile-container > button:hover{
+	background-color: #8A0000;
+}
+	
 .profile-container > button{
 	position: relative;
 	bottom: 56px;
