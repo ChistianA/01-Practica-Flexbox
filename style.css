@@ -208,6 +208,13 @@ p{
 	margin: 14px 0 14px 25px;
 }
 
+.photos-small > img{
+	margin: 0 5px;
+}
+
+.photos-small > img:first-child{
+	margin-left: 0;
+}
 .photos-title__footer > small{
 	color: #BEBEBE;
 }
